@@ -1,0 +1,6 @@
+#!/usr/bin/perl
+
+use 5.010;
+
+# declare an array to hold a list of numbers using range operator (...)
+@nums = 0...10;
