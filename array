@@ -17,3 +17,8 @@ say @nums;
 $zero = pop @nums;
 
 say $zero;
+
+# unshift to add element(s) to the beginning of the array
+unshift @nums, (-2, -1);
+
+say @nums;
