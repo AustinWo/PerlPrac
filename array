@@ -12,3 +12,8 @@ push @nums, 11;
 push @nums, 12...15;
 
 say @nums;
+
+# pop the last element from the array
+$zero = pop @nums;
+
+say $zero;
