@@ -4,3 +4,11 @@ use 5.010;
 
 # declare an array to hold a list of numbers using range operator (...)
 @nums = 0...10;
+
+# push an element to the end of the array
+push @nums, 11;
+
+# push elements to the end of the array
+push @nums, 12...15;
+
+say @nums;
