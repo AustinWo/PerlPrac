@@ -22,3 +22,6 @@ say $zero;
 unshift @nums, (-2, -1);
 
 say @nums;
+
+# shift to remove an element at the beginning of the array
+shift @nums;
