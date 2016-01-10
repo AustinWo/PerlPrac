@@ -25,3 +25,6 @@ say @nums;
 
 # shift to remove an element at the beginning of the array
 shift @nums;
+
+#Interpolate array into strings
+print "hello @nums nums";
