@@ -5,3 +5,13 @@ use 5.010;
 # chomp gets rid of the \n from <STDIN>
 chomp(@inputs = <STDIN>);
 
+# no .length property in Perl like in JavaScript
+$length = $#inputs+1;
+
+# while loop
+while ($length > 0){
+    say "My name is $inputs[$length-1]";
+    $length--;
+}
+
+say "done";
