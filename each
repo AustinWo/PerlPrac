@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+
+use 5.010;
+
+# chomp gets rid of the \n from <STDIN>
+chomp(@inputs = <STDIN>);
+
