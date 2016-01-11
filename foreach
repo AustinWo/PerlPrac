@@ -1,0 +1,29 @@
+#!usr/bin/perl
+
+use 5.010;
+
+# ======
+# foreach operator
+# ======
+
+foreach $city (qw< seattle sanfran bangkok>){
+    say "I love living in $city";
+}
+
+say $city;
+
+# Perl's default control variable: $_
+foreach (qw< seattle sanfran bangkok>){
+    say "I love living in $_";
+}
+
+say $city;
+
+# ======
+# each operator
+# ======
+
+@names = qw< austin ben cat >;
+while( my ($index, $val) = each @names) {
+    say "$index, $val";
+}
