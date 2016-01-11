@@ -1,0 +1,10 @@
+#!usr/bin/perl
+
+use 5.010;
+
+@names = qw< fred betty barney dino wilma pebbles bamm-bamm>;
+chomp(@lineNumbers = <STDIN>);
+
+foreach $lineNum (@lineNumbers) {
+    say $names[$lineNum-1];
+}

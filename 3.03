@@ -1,0 +1,15 @@
+#!usr/bin/perl
+
+use 5.010;
+
+chomp (@lines = <STDIN>);
+
+@lines = sort @lines;
+
+# display on the same line
+say @lines;
+
+# display on separate line
+foreach (@lines) {
+    say $_;
+}
