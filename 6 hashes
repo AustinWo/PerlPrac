@@ -1,0 +1,12 @@
+#!usr/bin/perl;
+
+use 5.010;
+
+$friends{'jeff'} = 'witt';
+$friends{'steven'} = 'rail';
+
+my @k = keys %friends;
+my @v = values %friends;
+
+say "@k";
+say "@v";
