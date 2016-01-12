@@ -1,0 +1,43 @@
+use 5.010;
+
+sub total {
+    my ($totalSoFar, @array) = @_;
+    # say $totalSoFar;
+    # say "@array";
+    foreach (0...$#array) {
+        $totalSoFar += $array[$_];
+    }
+    return $totalSoFar;
+}
+
+# say &total(1,2,3,4,5);
+
+# say &total(1...1000);
+
+sub above_average {
+    my @array = @_;
+    my $arrayAverage = (total(@array))/$#array;
+    my @listOfNumAboveAverage = ();
+    foreach (@array) {
+        if ($_ > $arrayAverage) {
+            push @listOfNumAboveAverage, $_;
+        }
+    }
+    say "@listOfNumAboveAverage";
+}
+
+# &above_average(1,2,3,4,5);
+
+sub greet {
+    state @people;
+    if ($#people == -1) {
+        say "Hi $_[0]! You are the first one here!";
+    } else {
+        say "Hi $_[0]! I've seen: @people";
+    }
+    push @people, $_[0];
+}
+
+greet("austin");
+greet("steven");
+
