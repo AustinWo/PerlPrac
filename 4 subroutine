@@ -1,0 +1,80 @@
+#!usr/bin/perl
+
+use 5.012;
+
+sub sayHi {
+    say "hi world";
+}
+
+sub max {
+    if ($_[0] > $_[1]) {
+        $_[0];
+    } else {
+        $_[1];
+    }
+}
+
+# say &max(6,20);
+
+
+sub findMax {
+    # @_ is the argument array
+    my$maxSoFar = shift @_;
+    foreach (@_) {
+        if ($maxSoFar < $_) {
+            $maxSoFar = $_;
+        }
+    }
+    $maxSoFar;
+}
+
+
+# say &findMax(1,2,3,4,5);
+
+
+sub sayArg {
+    my ($firstArg) = @_;
+    say $firstArg;
+    my $numArgs = @_;
+    say $numArgs;
+    my @argsArray = @_;
+    say "@argsArray";
+}
+
+# sayArg(1,2,3,4,5);
+
+
+
+my @names = qw<austin steven ben ken>;
+
+
+sub index_of {
+    my($name, @array) = @_;
+    foreach (0...$#array) {
+        if ($name eq $array[$_]) {
+            return $_;
+        }
+    }
+    return -1;
+}
+
+# say index_of("stev", @names);
+
+
+sub count {
+    state $countNum = 0;
+    say $countNum++;
+}
+
+# &count;
+# &count;
+# &count;
+
+sub addToArray {
+    state @names;
+    push @names, $_[0];
+    say "@names";
+}
+
+# addToArray("austin");
+# addToArray("steven");
