@@ -1,0 +1,8 @@
+#!usr/bin/perl
+
+use 5.010;
+
+sub above_average {
+    @array = @_;
+}
+
