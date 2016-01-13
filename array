@@ -11,20 +11,25 @@ push @nums, 11;
 # push elements to the end of the array
 push @nums, 12...15;
 
-say @nums;
-
+# say @nums;
+c
 # pop the last element from the array
 $zero = pop @nums;
 
-say $zero;
+# say $zero;
 
 # unshift to add element(s) to the beginning of the array
 unshift @nums, (-2, -1);
 
-say @nums;
+# say @nums;
 
 # shift to remove an element at the beginning of the array
 shift @nums;
 
 #Interpolate array into strings
-print "hello @nums nums";
+# print "hello @nums nums";
+
+
+($cities[0], $cities[1], $cities[2]) = qw< seattle sf portland>;
+@names = qw< austin jeff steven>;
+
