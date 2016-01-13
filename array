@@ -12,7 +12,6 @@ push @nums, 11;
 push @nums, 12...15;
 
 # say @nums;
-c
 # pop the last element from the array
 $zero = pop @nums;
 
@@ -32,4 +31,6 @@ shift @nums;
 
 ($cities[0], $cities[1], $cities[2]) = qw< seattle sf portland>;
 @names = qw< austin jeff steven>;
+@reverseNames = reverse @names;
+say "@reverseNames"
 
