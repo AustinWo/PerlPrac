@@ -4,3 +4,7 @@ use 5.010;
 
 $word = "World";
 say "Hello ${word}s";
+
+@counties = ('Canada', 'USA', 'Thailand');
+say $counties[0];
+say "I want to visit $counties[2] in 2016"
