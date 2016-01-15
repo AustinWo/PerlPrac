@@ -6,5 +6,9 @@ $word = "World";
 say "Hello ${word}s";
 
 @counties = ('Canada', 'USA', 'Thailand');
+say "I want to visit ${counties[2]} in 2016";
+
+@foods = qw<bacon steak rice>; # list of 3 strings
+$foodNum = @foods; # scalar, 3
+say $foodNum;
 say $counties[0];
-say "I want to visit $counties[2] in 2016"
