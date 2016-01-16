@@ -12,3 +12,10 @@ say "I want to visit ${counties[2]} in 2016";
 $foodNum = @foods; # scalar, 3
 say $foodNum;
 say $counties[0];
+
+@multiLinesInput = <STDIN>;
+
+for ($i = 0; $i <= $#multiLinesInput; $i++) {
+    say "looping";
+    say $multiLinesInput[$i];
+}
