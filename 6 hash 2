@@ -1,0 +1,7 @@
+#!bin/usr/perl
+
+use 5.010;
+ 
+# Initialize a hash
+# Assigning an empty list
+my %emptyList = ();
