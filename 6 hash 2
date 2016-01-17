@@ -5,3 +5,8 @@ use 5.010;
 # Initialize a hash
 # Assigning an empty list
 my %emptyList = ();
+
+# Initialize a hash reference (aka hash_ref or href)
+my $hash = {};
+$hash{'name'} = 'austin';
+$hash{'number'} = 1000;
