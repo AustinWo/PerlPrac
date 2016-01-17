@@ -10,3 +10,9 @@ my %emptyList = ();
 my $hash = {};
 $hash{'name'} = 'austin';
 $hash{'number'} = 1000;
+
+# Add several key/value pairs to a hash
+my %areaCode = ('sf', 415, 'seattle', 206, 'honolulu', 808);
+
+say $hash;
+say %areaCode;
