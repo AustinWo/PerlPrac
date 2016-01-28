@@ -32,5 +32,10 @@ shift @nums;
 ($cities[0], $cities[1], $cities[2]) = qw< seattle sf portland>;
 @names = qw< austin jeff steven>;
 @reverseNames = reverse @names;
-say "@reverseNames"
+say "@reverseNames";
+
+# reverse array
+@morenums = 5...15;
+@morenums = reverse  @morenums;
+say "@morenums";
 
