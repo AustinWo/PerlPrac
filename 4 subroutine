@@ -19,7 +19,7 @@ sub max {
 
 sub findMax {
     # @_ is the argument array
-    my$maxSoFar = shift @_;
+    my $maxSoFar = shift @_;
     foreach (@_) {
         if ($maxSoFar < $_) {
             $maxSoFar = $_;
@@ -71,10 +71,11 @@ sub count {
 # &count;
 
 sub addToArray {
+    # limitation: cannot initialize array
     state @names;
     push @names, $_[0];
     say "@names";
 }
 
-# addToArray("austin");
-# addToArray("steven");
+addToArray("austin");
+addToArray("steven");
