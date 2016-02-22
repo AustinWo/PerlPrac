@@ -2,3 +2,40 @@
 
 use 5.010;
 
+@nums = (1,2,3);
+
+pop @nums;
+
+push (@nums, "three"); # (1,2,"three")
+
+# can use push without parens
+# can use push with many arguments
+push @nums, "four", "five"; # (1,2,"three","four", "five")
+
+# notice the order of elements being added
+unshift @nums, -1, 0; # (-1, 0, 1, 2 ......) 
+
+# interpolate array in a string usng "" 
+say "@nums";
+
+# neeed () around the array
+# $num, the control variable is not a copy of the list element, it actually is the list element
+# modifying the control variable = modifying the element unlike in Java or JavaScript
+foreach $num (@nums) {
+    say $num;
+}
+
+# $_ is the default control variable
+foreach (@nums) {
+    say $_;
+}
+
+@b = "hello" . "world";
+
+say "@b";
+
+%lastNames = (austin => "Worachet", jeff => "Witt");
+say "$lastNames{austin}";
+
+say "$ENV{PATH}";
+
