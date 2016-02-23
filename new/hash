@@ -1,0 +1,6 @@
+#! usr/bin/perl
+
+use 5.010;
+
+%people = ();
+%people=>{austin} = (name => "wo", age => 24, job => "engineer");
