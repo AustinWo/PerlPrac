@@ -4,7 +4,7 @@ use 5.010;
 $string = "Hi Austin";
 # lower case function
 say lc $string;
-say "\L$string";
+say "\L${string}Wo";
 # upper case function
 say uc $string;
-say "\U$string";
+say "\U${string}Wo";
