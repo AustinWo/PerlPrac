@@ -15,4 +15,5 @@ $hash{'number'} = 1000;
 my %areaCode = ('sf', 415, 'seattle', 206, 'honolulu', 808);
 
 say $hash;
+say %hash;
 say %areaCode;
