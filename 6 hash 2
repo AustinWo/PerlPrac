@@ -17,3 +17,7 @@ my %areaCode = ('sf', 415, 'seattle', 206, 'honolulu', 808);
 say $hash;
 say %hash;
 say %areaCode;
+
+
+my @keys = keys %areaCode;
+say "@keys";
