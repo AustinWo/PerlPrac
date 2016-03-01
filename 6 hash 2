@@ -21,3 +21,6 @@ say %areaCode;
 
 my @keys = keys %areaCode;
 say "@keys";
+
+my @values = values %areaCode;
+say "@values";
