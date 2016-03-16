@@ -39,3 +39,9 @@ say "@reverseNames";
 @morenums = reverse  @morenums;
 say "@morenums";
 
+{
+    my $val = "hi";    
+    say $val;
+}
+
+say $val; # out of scope
